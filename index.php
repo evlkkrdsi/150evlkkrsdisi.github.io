@@ -1,30 +1,4 @@
-<?php
-$mobileDevices = array('iPhone','iPad','Android','Windows Phone');
-$userAgent = $_SERVER['HTTP_USER_AGENT'];
 
-$isMobile = false;
-foreach ($mobileDevices as $device) {
-    if (strpos($userAgent, $device) !== false) {
-        $isMobile = true;
-        break;
-    }
-}
-
-if (!$isMobile) {
-    // Mobil olmayan kullanıcılara boş bir sayfa göster
-    echo '<!DOCTYPE html>
-    <html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        <h1>404 Not Found</h1>
-    </body>
-    </html>';
-
-    exit();
-}
-?>
 <html lang="tr" class=" test-es5object test-supports test-csstransforms3d test-webpalpha test-webplossless"><!--<![endif]--><head>
     <meta charset="utf-8">
     <link rel="dns-prefetch" href="https://giris.turkiye.gov.tr/Giris/gir">
